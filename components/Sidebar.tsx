@@ -89,20 +89,22 @@ export function Sidebar() {
           </a>
         </p>
         <div className="flex flex-wrap gap-x-3 gap-y-1">
-          <a
-            href="#"
+          <Link
+            href="/disclaimer"
             className="flex items-center gap-1 text-[11px] text-[#555] hover:text-[#f0f0f0] transition-colors"
           >
             <FileText size={10} /> Disclaimer
-          </a>
+          </Link>
           <a
-            href="#"
+            href="https://revolut.me/balagbalint/pocket/4wmvhlFQAI"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1 text-[11px] text-[#555] hover:text-[#39FF14] transition-colors"
           >
             <DollarSign size={10} /> Donate
           </a>
           <a
-            href="https://github.com/datwalkerv"
+            href="https://github.com/datwalkerv/datsounds"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 text-[11px] text-[#555] hover:text-[#f0f0f0] transition-colors"
