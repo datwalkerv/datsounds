@@ -33,7 +33,7 @@ export function DownloadMenu({ track, className }: DownloadMenuProps) {
     if (!stem || downloading) return;
 
     const label = STEM_LABELS[stemKey] ?? stemKey;
-    const filename = `${track.title} - ${label}.mp3`;
+    const filename = `${track.title} - ${label} [datsounds].mp3`;
 
     setDownloading(stemKey);
     setOpen(false);

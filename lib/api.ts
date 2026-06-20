@@ -1,12 +1,15 @@
 import { Track, ApiResponse, EnergyLevel } from "@/types/track";
 
-const PROXY = "https://ikcors.azurewebsites.net/api/proxy/";
-
-const POPULAR_URL =
-  "https%3A%2F%2Fwww.epidemicsound.com%2Fjson%2Fsearch%2Ftracks%2F%3Forder%3Ddesc%26page%3D1%26segment_types%3Dmusic-structure%2540v2%26segment_types%3Dpredicted-popular-15sec%26segment_types%3Dsoundly-sfx%26sort%3Dneutral-pop28%26term%3D";
-
-const SEARCH_URL =
-  "https%3A%2F%2Fwww.epidemicsound.com%2Fjson%2Fsearch%2Ftracks%2F%3Forder%3Ddesc%26page%3D1%26segment_types%3Dmusic-structure%2540v2%26segment_types%3Dpredicted-popular-15sec%26segment_types%3Dsoundly-sfx%26sort%3Drelevance%26term%3D";
+function getBaseUrl() {
+  if (typeof window !== "undefined") return "";
+  if (process.env.NEXT_PUBLIC_APP_URL) {
+    return process.env.NEXT_PUBLIC_APP_URL;
+  }
+  if (process.env.VERCEL_URL) {
+    return `https://${process.env.VERCEL_URL}`;
+  }
+  return "http://localhost:3000";
+}
 
 function normalizeTracks(response: ApiResponse): Track[] {
   if (!response?.entities?.tracks) return [];
@@ -14,13 +17,34 @@ function normalizeTracks(response: ApiResponse): Track[] {
 }
 
 async function fetchTracks(url: string): Promise<Track[]> {
-  const res = await fetch(PROXY + url, {
-    next: { revalidate: 300 },
-  });
+  const decodedUrl = decodeURIComponent(url);
+  let res;
+
+  if (typeof window === "undefined") {
+    // Server-side: fetch directly to avoid loopback requests
+    res = await fetch(decodedUrl, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "application/json",
+      },
+      next: { revalidate: 300 },
+    });
+  } else {
+    // Client-side: use local proxy
+    const baseUrl = getBaseUrl();
+    res = await fetch(`${baseUrl}/api/proxy?url=${encodeURIComponent(decodedUrl)}`);
+  }
+
   if (!res.ok) throw new Error(`API error ${res.status}`);
   const data: ApiResponse = await res.json();
   return normalizeTracks(data);
 }
+
+const POPULAR_URL =
+  "https%3A%2F%2Fwww.epidemicsound.com%2Fjson%2Fsearch%2Ftracks%2F%3Forder%3Ddesc%26page%3D1%26segment_types%3Dmusic-structure%2540v2%26segment_types%3Dpredicted-popular-15sec%26segment_types%3Dsoundly-sfx%26sort%3Dneutral-pop28%26term%3D";
+
+const SEARCH_URL =
+  "https%3A%2F%2Fwww.epidemicsound.com%2Fjson%2Fsearch%2Ftracks%2F%3Forder%3Ddesc%26page%3D1%26segment_types%3Dmusic-structure%2540v2%26segment_types%3Dpredicted-popular-15sec%26segment_types%3Dsoundly-sfx%26sort%3Drelevance%26term%3D";
 
 const ENERGY_ORDER: Record<EnergyLevel, number> = {
   low: 0,
