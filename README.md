@@ -1,6 +1,6 @@
 <div align="center">
 
-<img height="96px" src="https://raw.githubusercontent.com/datwalkerv/datsounds/refs/heads/main/app/icon.svg" alt="datsounds" style="border-radius: 100%;box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);" />
+<img src="https://raw.githubusercontent.com/datwalkerv/datsounds/refs/heads/main/app/icon.svg" width="10%" alt="datsounds" style="border-radius: 100%;box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);" />
 
 # datsounds
 
