@@ -25,15 +25,37 @@ interface DownloadMenuProps {
 export function DownloadMenu({ track, className }: DownloadMenuProps) {
   const [open, setOpen] = useState(false);
   const [downloading, setDownloading] = useState<string | null>(null);
+  const [detailedTrack, setDetailedTrack] = useState<Track | null>(null);
+  const [loadingStems, setLoadingStems] = useState(false);
   const { state, markDownloaded } = usePlayer();
   const isDownloaded = state.downloadedIds.includes(track.id);
 
+  async function fetchFullStems() {
+    if (detailedTrack || !track.kosmosId || loadingStems) return;
+
+    setLoadingStems(true);
+    try {
+      const url = `https://www.epidemicsound.com/json/track/kosmos-id/${track.kosmosId}/?segment_types=music-structure%40v2&segment_types=predicted-popular-15sec`;
+      const res = await fetch(`/api/proxy?url=${encodeURIComponent(url)}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      if (data && data.stems) {
+        setDetailedTrack(data);
+      }
+    } catch (error) {
+      console.error("Failed to fetch detailed track stems:", error);
+    } finally {
+      setLoadingStems(false);
+    }
+  }
+
   async function handleDownload(stemKey: string) {
-    const stem = track.stems[stemKey as keyof typeof track.stems];
+    const currentTrack = detailedTrack ?? track;
+    const stem = currentTrack.stems[stemKey as keyof typeof currentTrack.stems];
     if (!stem || downloading) return;
 
     const label = STEM_LABELS[stemKey] ?? stemKey;
-    const filename = `${track.title} - ${label} [datsounds].mp3`;
+    const filename = `${currentTrack.title} - ${label} [datsounds].mp3`;
 
     setDownloading(stemKey);
     setOpen(false);
@@ -64,14 +86,19 @@ export function DownloadMenu({ track, className }: DownloadMenuProps) {
     }
   }
 
-  const availableStems = STEM_ORDER.filter((key) => !!track.stems[key]);
+  const currentTrack = detailedTrack ?? track;
+  const availableStems = STEM_ORDER.filter((key) => !!currentTrack.stems[key]);
 
   return (
     <div className={cn("relative", className)}>
       <button
-        onClick={(e) => {
+        onClick={async (e) => {
           e.stopPropagation();
-          setOpen((v) => !v);
+          const nextOpen = !open;
+          setOpen(nextOpen);
+          if (nextOpen) {
+            await fetchFullStems();
+          }
         }}
         disabled={!!downloading}
         className={cn(
@@ -100,16 +127,27 @@ export function DownloadMenu({ track, className }: DownloadMenuProps) {
             <p className="px-3 py-1.5 text-[10px] uppercase tracking-widest text-[#444] border-b border-[#1f1f1f] mb-1">
               Download stem
             </p>
-            {availableStems.map((key) => (
-              <button
-                key={key}
-                onClick={() => handleDownload(key)}
-                className="w-full px-3 py-2 text-left text-sm text-[#ccc] hover:text-[#39FF14] hover:bg-[#1f1f1f] transition-colors flex items-center gap-2"
-              >
-                <Download size={12} className="opacity-60 shrink-0" />
-                {STEM_LABELS[key]}
-              </button>
-            ))}
+            {loadingStems ? (
+              <div className="flex items-center gap-2 px-3 py-3 text-xs text-[#666]">
+                <Loader2 size={12} className="animate-spin text-[#39FF14] shrink-0" />
+                <span>Loading stems...</span>
+              </div>
+            ) : availableStems.length === 0 ? (
+              <div className="px-3 py-2 text-xs text-[#666]">
+                No stems available
+              </div>
+            ) : (
+              availableStems.map((key) => (
+                <button
+                  key={key}
+                  onClick={() => handleDownload(key)}
+                  className="w-full px-3 py-2 text-left text-sm text-[#ccc] hover:text-[#39FF14] hover:bg-[#1f1f1f] transition-colors flex items-center gap-2"
+                >
+                  <Download size={12} className="opacity-60 shrink-0" />
+                  {STEM_LABELS[key]}
+                </button>
+              ))
+            )}
           </div>
         </>
       )}
