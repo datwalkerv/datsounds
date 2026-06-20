@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+<img height="96px" src="https://raw.githubusercontent.com/datwalkerv/datsounds/refs/heads/main/app/icon.svg" alt="datsounds" style="border-radius: 100%;box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);" />
 
-First, run the development server:
+# datsounds
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Top sounds for your top cuts.**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Find the best sounds for your edits, quick and easy.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Key Features
 
-## Learn More
+- **⚡ Real-time Waveform Player**: Persistent, bottom-anchored audio player rendering responsive audio waveforms on the fly.
+- **🎧 Curated Genre Hubs**: Dedicated, quick-access sections for popular genres, including **Lofi** and **Trap**.
+- **💾 Advanced Download System**: Multi-format stem downloads with dropdown selectors and asynchronous downloading support.
+- **💚 Liked & Saved Tracks**: Locally-persisted user preferences for quick access to your favorite sounds.
+- **🛡️ Secure API Proxy Routing**: Secure internal Next.js proxying for all external third-party music API communications.
+- **🌟 Premium UI/UX**: Harmonious color palettes, responsive components, and subtle micro-animations.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Technology Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
+- **Runtime & View Library**: [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) with CSS-level custom theme variables
+- **Type Safety**: [TypeScript](https://www.typescriptlang.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Toast Notifications**: [Sonner](https://sonner.emilkowal.ski/)
+- **Fonts**: [Inter](https://fonts.google.com/specimen/Inter) (Body) & [Instrument Serif](https://fonts.google.com/specimen/Instrument+Serif) (Headings)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⚖️ Disclaimer & Privacy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Content Hosting & Ownership
+- **datsounds** does not host, store, or own any of the content available for download on this website. All audio content is owned entirely by [Epidemic Sound](https://www.epidemicsound.com) and is publicly accessible to everyone.
+- The platform indexes public Epidemic Sound content in a **lower quality version**. This content is accessible to anyone without a paid subscription.
+- This application is built strictly for **preview and audition purposes**. If you want to use the sounds in your creative projects, please support the creators and purchase an active subscription from Epidemic Sound so you will get the appropriate license and access the higher quality files.
+
+### Privacy & Data Policy
+- datsounds focuses entirely on privacy. We do not use any databases, and we do not collect, store, or receive any information about you. Everything remains completely under your control.
+- The only information stored is kept locally on your own machine within your browser's local storage. This is limited to:
+  - Metadata of your downloaded tracks
+  - Metadata of your liked/saved tracks
+
+<br>
+
+**Made with love for love. 💚**  
+*From editor to editors, have fun.*
+

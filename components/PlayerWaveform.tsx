@@ -27,11 +27,13 @@ export function PlayerWaveform({ waveformUrl, className = "" }: PlayerWaveformPr
   }
 
   return (
-    <canvas
-      ref={canvasRef}
-      onClick={handleClick}
-      className={`waveform ${className}`}
-      style={{ cursor: "pointer" }}
-    />
+    <div className={`min-w-0 overflow-hidden ${className}`}>
+      <canvas
+        ref={canvasRef}
+        onClick={handleClick}
+        className="waveform w-full h-full"
+        style={{ cursor: "pointer" }}
+      />
+    </div>
   );
 }

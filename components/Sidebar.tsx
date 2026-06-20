@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { Logo } from "@/components/Logo";
 import {
   Home,
   TrendingUp,
@@ -32,9 +33,7 @@ export function Sidebar() {
       {/* Logo */}
       <div className="px-5 py-5 border-b border-[#1f1f1f]">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-[#39FF14] flex items-center justify-center shadow-[0_0_12px_rgba(57,255,20,0.6)] group-hover:shadow-[0_0_20px_rgba(57,255,20,0.8)] transition-shadow">
-            <span className="text-black font-bold text-sm leading-none">ds</span>
-          </div>
+          <Logo className="w-8 h-8 rounded-lg shadow-[0_0_12px_rgba(57,255,20,0.6)] group-hover:shadow-[0_0_20px_rgba(57,255,20,0.8)] transition-shadow" />
           <span className="font-serif text-lg font-normal tracking-tight text-[#f0f0f0]">
             datsounds
           </span>
