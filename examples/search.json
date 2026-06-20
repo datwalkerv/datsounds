@@ -1,0 +1,574 @@
+{
+  "entities": {
+    "tracks": {
+      "149995": {
+        "id": 149995,
+        "kosmosId": "564de9eb-2790-4707-a316-59b4b3490266",
+        "isrc": "SE5Q52305129",
+        "title": "This Makes Everything Better",
+        "added": "2023-12-22T09:34:49",
+        "creatives": {
+          "composers": [
+            {
+              "creativeType": "composer",
+              "name": "Sarah Debnam",
+              "slug": "sarah-debnam"
+            }
+          ],
+          "mainArtists": [
+            {
+              "creativeType": "main_artist",
+              "name": "Sarah, the Illstrumentalist",
+              "slug": "sarah-the-illstrumentalist"
+            }
+          ],
+          "featuredArtists": [],
+          "producers": [
+            {
+              "creativeType": "producer",
+              "name": "Sarah, the Illstrumentalist",
+              "slug": "sarah-the-illstrumentalist"
+            }
+          ]
+        },
+        "length": 125,
+        "durationMs": 125435,
+        "bpm": 92,
+        "isSfx": false,
+        "hasVocals": false,
+        "hidden": false,
+        "publicSlug": "KTT4HAD5DN",
+        "genres": [
+          {
+            "displayTag": "Lo-fi Hip Hop",
+            "tag": "lo-fi hip hop",
+            "slug": "lo-fi-hip-hop",
+            "fatherTag": "Hip Hop"
+          },
+          {
+            "displayTag": "Beats",
+            "tag": "Beats",
+            "slug": "beats",
+            "fatherTag": "Production Genre"
+          }
+        ],
+        "moods": [
+          {
+            "tag": "Hopeful",
+            "fatherTag": "Moods",
+            "displayTag": "Hopeful",
+            "slug": "hopeful"
+          },
+          {
+            "tag": "Dreamy",
+            "fatherTag": "Moods",
+            "displayTag": "Dreamy",
+            "slug": "dreamy"
+          }
+        ],
+        "energyLevel": "medium",
+        "stems": {
+          "full": {
+            "stemType": "full",
+            "s3TrackId": 439429,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KK39MM131CAMD3R6ESS3R1WC.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01HW3GVDCRR26959DSZN2FFBMK.json"
+          },
+          "bass": {
+            "stemType": "bass",
+            "s3TrackId": 439430,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01HVMW7FZ7ZE5W2PW53TYHZMBW.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01HW3PCXP78CRH0M46T3YFAV2T.json"
+          },
+          "drums": {
+            "stemType": "drums",
+            "s3TrackId": 439427,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01HW2GRR1WV48FE6XD7XTETCKQ.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01HW3T0V1E8734VF3F45RKQQ6R.json"
+          },
+          "instruments": {
+            "stemType": "instruments",
+            "s3TrackId": 439431,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01HW2GA80BGH4GT20NC375S266.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01HW35M1QYAGB2B1T66C2X8Y3M.json"
+          },
+          "melody": {
+            "stemType": "melody",
+            "s3TrackId": 439428,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01HW2E0NB6WMTN7R4GS7VFJ0KP.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01HW34WE23WF8A21GWY69YN4A6.json"
+          }
+        },
+        "oldTitle": null,
+        "seriesId": null,
+        "metadataTags": [
+          "mellow",
+          "upbeat",
+          "laid back",
+          "vocal chops"
+        ],
+        "isExplicit": false,
+        "isCommercialRelease": true,
+        "imageUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/11949/3000x3000.jpg",
+        "coverArt": {
+          "baseUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/11949/",
+          "sizes": {
+            "XS": "3000x3000.jpg?height=128&width=128",
+            "S": "3000x3000.jpg?height=300&width=300",
+            "M": "3000x3000.jpg?height=600&width=600",
+            "L": "3000x3000.jpg?height=1050&width=1050"
+          }
+        },
+        "releaseDate": "2024-04-26T03:00:05",
+        "segmentGroups": [
+          {
+            "type": "music-structure",
+            "version": "v2",
+            "segments": [
+              {
+                "startTime": 0,
+                "duration": 10.44,
+                "value": "Intro"
+              },
+              {
+                "startTime": 10.44,
+                "duration": 10.43,
+                "value": "Intro"
+              },
+              {
+                "startTime": 20.87,
+                "duration": 20.87,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 41.74,
+                "duration": 7.82,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 49.56,
+                "duration": 10.44,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 60,
+                "duration": 10.43,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 70.43,
+                "duration": 18.23,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 88.66,
+                "duration": 18.29,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 106.95,
+                "duration": 5.22,
+                "value": "Outro"
+              },
+              {
+                "startTime": 112.17,
+                "duration": 13.2647916666667,
+                "value": "Outro"
+              }
+            ]
+          },
+          {
+            "type": "predicted-popular-15sec",
+            "version": "v0a",
+            "segments": [
+              {
+                "startTime": 16,
+                "duration": 15,
+                "value": "14.900664806365967"
+              }
+            ]
+          }
+        ],
+        "cover": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/11949/3000x3000.jpg?height=300&width=300"
+      },
+      "150467": {
+        "id": 150467,
+        "kosmosId": "621fcc8f-c9b1-4595-955d-553051e8b012",
+        "isrc": "SE5Q52400423",
+        "title": "lofi del pueblo",
+        "added": "2024-02-08T09:21:12",
+        "creatives": {
+          "composers": [
+            {
+              "creativeType": "composer",
+              "name": "Donovan Valle",
+              "slug": "donovan-valle-2"
+            }
+          ],
+          "mainArtists": [
+            {
+              "creativeType": "main_artist",
+              "name": "DonVayei",
+              "slug": "donvayei"
+            }
+          ],
+          "featuredArtists": [],
+          "producers": [
+            {
+              "creativeType": "producer",
+              "name": "DonVayei",
+              "slug": "donvayei"
+            }
+          ]
+        },
+        "length": 141,
+        "durationMs": 141892,
+        "bpm": 74,
+        "isSfx": false,
+        "hasVocals": false,
+        "hidden": false,
+        "publicSlug": "nlIaeTxRQT",
+        "genres": [
+          {
+            "displayTag": "Lo-fi Hip Hop",
+            "tag": "lo-fi hip hop",
+            "slug": "lo-fi-hip-hop",
+            "fatherTag": "Hip Hop"
+          },
+          {
+            "displayTag": "Cumbia",
+            "tag": "cumbia",
+            "slug": "cumbia",
+            "fatherTag": "Latin"
+          }
+        ],
+        "moods": [
+          {
+            "tag": "Laid Back",
+            "fatherTag": "Moods",
+            "displayTag": "Laid Back",
+            "slug": "laid-back"
+          },
+          {
+            "tag": "Sentimental",
+            "fatherTag": "Moods",
+            "displayTag": "Sentimental",
+            "slug": "sentimental"
+          }
+        ],
+        "energyLevel": "medium",
+        "stems": {
+          "full": {
+            "stemType": "full",
+            "s3TrackId": 441569,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KK0CFHYEV9AA1B5YYDXW2NP4.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/ddfa0a9c-33e4-40c6-bbde-4a4bb115fac8.json"
+          },
+          "bass": {
+            "stemType": "bass",
+            "s3TrackId": 441572,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01HVVD3M21KCXCKPSKB9R6T3X9.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01HW3RJS5QKYJZQWB8WYGSGJCF.json"
+          },
+          "drums": {
+            "stemType": "drums",
+            "s3TrackId": 441571,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01HVVD3M59T4S47HQV7E3YSHKD.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01HW3RJRT1VN4NHY0XZC7GFVC5.json"
+          },
+          "instruments": {
+            "stemType": "instruments",
+            "s3TrackId": 441573,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01HVM7SN3YPHP5NMQM0TGG1RV6.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01HVMBJ7S9NDAHG979VJ8QJTM0.json"
+          },
+          "melody": {
+            "stemType": "melody",
+            "s3TrackId": 441570,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01HVVD3KC383PA6MZQEJDR16C2.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01HW3RJRC9ZWAQ32K3FKGJ3YMX.json"
+          }
+        },
+        "oldTitle": null,
+        "seriesId": null,
+        "metadataTags": [
+          "guitar",
+          "mellow",
+          "hopeful"
+        ],
+        "isExplicit": false,
+        "isCommercialRelease": true,
+        "imageUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/11928/3000x3000.jpg",
+        "coverArt": {
+          "baseUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/11928/",
+          "sizes": {
+            "XS": "3000x3000.jpg?height=128&width=128",
+            "S": "3000x3000.jpg?height=300&width=300",
+            "M": "3000x3000.jpg?height=600&width=600",
+            "L": "3000x3000.jpg?height=1050&width=1050"
+          }
+        },
+        "releaseDate": "2024-04-19T03:00:07",
+        "segmentGroups": [
+          {
+            "type": "music-structure",
+            "version": "v2",
+            "segments": [
+              {
+                "startTime": 0,
+                "duration": 6.49,
+                "value": "Intro"
+              },
+              {
+                "startTime": 6.49,
+                "duration": 12.97,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 19.46,
+                "duration": 12.98,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 32.44,
+                "duration": 12.97,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 45.41,
+                "duration": 12.98,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 58.39,
+                "duration": 12.97,
+                "value": "Bridge"
+              },
+              {
+                "startTime": 71.36,
+                "duration": 12.97,
+                "value": "Bridge"
+              },
+              {
+                "startTime": 84.33,
+                "duration": 12.97,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 97.3,
+                "duration": 12.97,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 110.27,
+                "duration": 6.49000000000001,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 116.76,
+                "duration": 6.49,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 123.25,
+                "duration": 18.641875,
+                "value": "Outro"
+              }
+            ]
+          },
+          {
+            "type": "predicted-popular-15sec",
+            "version": "v0a",
+            "segments": [
+              {
+                "startTime": 17,
+                "duration": 15,
+                "value": "14.945372939109802"
+              }
+            ]
+          }
+        ],
+        "cover": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/11928/3000x3000.jpg?height=300&width=300"
+      },
+      "284217": {
+        "id": 284217,
+        "kosmosId": "e9c9b045-477b-4628-8eee-06712fb7c385",
+        "isrc": "SE5Q52600691",
+        "title": "Fuzzy Edges",
+        "added": "2026-03-12T14:39:14",
+        "creatives": {
+          "composers": [
+            {
+              "creativeType": "composer",
+              "name": "Gabriel Millman",
+              "slug": "gabriel-millman"
+            }
+          ],
+          "mainArtists": [
+            {
+              "creativeType": "main_artist",
+              "name": "Jobii",
+              "slug": "jobii"
+            }
+          ],
+          "featuredArtists": [],
+          "producers": [
+            {
+              "creativeType": "producer",
+              "name": "Gabriel Millman",
+              "slug": "gabriel-millman"
+            }
+          ]
+        },
+        "length": 155,
+        "durationMs": 155812,
+        "bpm": 132,
+        "isSfx": false,
+        "hasVocals": false,
+        "hidden": false,
+        "publicSlug": "Mi4gUeXGL6",
+        "genres": [
+          {
+            "displayTag": "Lo-fi Hip Hop",
+            "tag": "lo-fi hip hop",
+            "slug": "lo-fi-hip-hop",
+            "fatherTag": "Hip Hop"
+          }
+        ],
+        "moods": [
+          {
+            "tag": "Dreamy",
+            "fatherTag": "Moods",
+            "displayTag": "Dreamy",
+            "slug": "dreamy"
+          },
+          {
+            "tag": "Laid Back",
+            "fatherTag": "Moods",
+            "displayTag": "Laid Back",
+            "slug": "laid-back"
+          }
+        ],
+        "energyLevel": "variable",
+        "stems": {
+          "full": {
+            "stemType": "full",
+            "s3TrackId": 605272,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KKH4BSMR0A21FBPB52XV022H.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KKBTYWDX4BYFMAQESH5RS1P6.json"
+          },
+          "bass": {
+            "stemType": "bass",
+            "s3TrackId": 605271,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KKH4BSMXV7561TWFSRME7373.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KKBTYWE6X5ABFYCV4JASEQXV.json"
+          },
+          "drums": {
+            "stemType": "drums",
+            "s3TrackId": 605268,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KKH4BSMKH58QD64EXA7B4618.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KKBTYWEEG42G79RPK5FHT1M7.json"
+          },
+          "instruments": {
+            "stemType": "instruments",
+            "s3TrackId": 605270,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KKBTWG8VC39MMFVRNF1CQTCS.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KKBTYWEXS5Y94BNSACJHP8FS.json"
+          },
+          "melody": {
+            "stemType": "melody",
+            "s3TrackId": 605269,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KKH4BSMD7FYX4J5TQPCE9TXK.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KKBTYWEP2SYVFWVV7MW2RCMP.json"
+          }
+        },
+        "oldTitle": null,
+        "seriesId": null,
+        "metadataTags": [],
+        "isExplicit": false,
+        "isCommercialRelease": true,
+        "imageUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15781/3000x3000.jpg",
+        "coverArt": {
+          "baseUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15781/",
+          "sizes": {
+            "XS": "3000x3000.jpg?height=128&width=128",
+            "S": "3000x3000.jpg?height=300&width=300",
+            "M": "3000x3000.jpg?height=600&width=600",
+            "L": "3000x3000.jpg?height=1050&width=1050"
+          }
+        },
+        "releaseDate": "2026-05-06T03:00:08",
+        "segmentGroups": [
+          {
+            "type": "music-structure",
+            "version": "v2",
+            "segments": [
+              {
+                "startTime": 0,
+                "duration": 7.28,
+                "value": "Intro"
+              },
+              {
+                "startTime": 7.28,
+                "duration": 14.54,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 21.82,
+                "duration": 14.54,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 36.36,
+                "duration": 14.56,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 50.92,
+                "duration": 14.54,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 65.46,
+                "duration": 32.72,
+                "value": "Bridge"
+              },
+              {
+                "startTime": 98.18,
+                "duration": 25.46,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 123.64,
+                "duration": 14.54,
+                "value": "Outro"
+              },
+              {
+                "startTime": 138.18,
+                "duration": 10.94,
+                "value": "Outro"
+              },
+              {
+                "startTime": 149.12,
+                "duration": 6.6925,
+                "value": "Outro"
+              }
+            ]
+          },
+          {
+            "type": "predicted-popular-15sec",
+            "version": "v0a",
+            "segments": [
+              {
+                "startTime": 18,
+                "duration": 15,
+                "value": "14.968652307987213"
+              }
+            ]
+          }
+        ],
+        "cover": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15781/3000x3000.jpg?height=300&width=300"
+      }
+    }
+  }
+}

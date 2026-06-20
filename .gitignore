@@ -22,7 +22,10 @@
 
 # misc
 .DS_Store
+._*
 *.pem
+CLAUDE.md
+AGENTS.md
 
 # debug
 npm-debug.log*

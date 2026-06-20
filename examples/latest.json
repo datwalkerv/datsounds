@@ -1,0 +1,511 @@
+{
+  "entities": {
+    "tracks": {
+      "284559": {
+        "id": 284559,
+        "kosmosId": "aa40fbc7-78bd-4424-b537-54d23883e153",
+        "isrc": "SE5Q52601033",
+        "title": "Empty Hand, Empty Mind",
+        "added": "2026-05-08T10:43:35",
+        "creatives": {
+          "composers": [
+            {
+              "creativeType": "composer",
+              "name": "Johan Eriksson",
+              "slug": "johan-eriksson"
+            }
+          ],
+          "mainArtists": [
+            {
+              "creativeType": "main_artist",
+              "name": "Rand Aldo",
+              "slug": "rand-aldo"
+            }
+          ],
+          "featuredArtists": [],
+          "producers": [
+            {
+              "creativeType": "producer",
+              "name": "Johan Eriksson",
+              "slug": "johan-eriksson"
+            }
+          ]
+        },
+        "length": 191,
+        "durationMs": 191750,
+        "bpm": 70,
+        "isSfx": false,
+        "hasVocals": false,
+        "hidden": false,
+        "publicSlug": "JBEBzl20Nq",
+        "genres": [
+          {
+            "displayTag": "Meditation",
+            "tag": "meditation",
+            "slug": "meditation",
+            "fatherTag": "Ambient"
+          }
+        ],
+        "moods": [
+          {
+            "tag": "Relaxing",
+            "fatherTag": "Moods",
+            "displayTag": "Relaxing",
+            "slug": "relaxing"
+          },
+          {
+            "tag": "Peaceful",
+            "fatherTag": "Moods",
+            "displayTag": "Peaceful",
+            "slug": "peaceful"
+          }
+        ],
+        "energyLevel": "low",
+        "stems": {
+          "full": {
+            "stemType": "full",
+            "s3TrackId": 606851,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KR3C3R8HHD4NK0343W2AB7SF.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KMQXJJ8G1XM6BDTV7CJD26BR.json"
+          },
+          "bass": {
+            "stemType": "bass",
+            "s3TrackId": 606854,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KR3C3R7H3MM4KMHDQA3M2E23.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KMQXJJ7ZMSPS9SGJW3AYB9P1.json"
+          },
+          "drums": {
+            "stemType": "drums",
+            "s3TrackId": 606850,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KR3C3R7T9E7RMHW3JNW9ZK5W.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KMQXJJ9044TK4QA1MTTV0Q3S.json"
+          },
+          "instruments": {
+            "stemType": "instruments",
+            "s3TrackId": 606853,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KR3C3R88GGHGNRJD8YCDB3Z5.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KMQXJJ9GG4ZA4E1C63ETK9JD.json"
+          },
+          "melody": {
+            "stemType": "melody",
+            "s3TrackId": 606852,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KR3C3R82JSBAQHV08CFS2HET.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KMQXJJ9YK3EAM3MGPNRVQKC6.json"
+          }
+        },
+        "oldTitle": null,
+        "seriesId": null,
+        "metadataTags": [],
+        "isExplicit": false,
+        "isCommercialRelease": true,
+        "imageUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15977/3000x3000.jpg",
+        "coverArt": {
+          "baseUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15977/",
+          "sizes": {
+            "XS": "3000x3000.jpg?height=128&width=128",
+            "S": "3000x3000.jpg?height=300&width=300",
+            "M": "3000x3000.jpg?height=600&width=600",
+            "L": "3000x3000.jpg?height=1050&width=1050"
+          }
+        },
+        "releaseDate": "2026-06-16T03:00:07",
+        "segmentGroups": [
+          {
+            "type": "music-structure",
+            "version": "v2",
+            "segments": [
+              {
+                "startTime": 0,
+                "duration": 191.75,
+                "value": "Chorus"
+              }
+            ]
+          },
+          {
+            "type": "predicted-popular-15sec",
+            "version": "v0a",
+            "segments": [
+              {
+                "startTime": 15,
+                "duration": 15,
+                "value": "14.945112347602844"
+              }
+            ]
+          }
+        ],
+        "cover": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15977/3000x3000.jpg?height=300&width=300"
+      },
+      "284567": {
+        "id": 284567,
+        "kosmosId": "1243a683-0e4a-42ef-bc2e-271e798849c4",
+        "isrc": "SE5Q52601041",
+        "title": "Clusters",
+        "added": "2026-05-11T10:40:10",
+        "creatives": {
+          "composers": [
+            {
+              "creativeType": "composer",
+              "name": "Jakob Ahlbom",
+              "slug": "jakob-ahlbom"
+            },
+            {
+              "creativeType": "composer",
+              "name": "Christoffer Moe Ditlevsen",
+              "slug": "christoffer-moe-ditlevsen"
+            }
+          ],
+          "mainArtists": [
+            {
+              "creativeType": "main_artist",
+              "name": "Christoffer Moe Ditlevsen",
+              "slug": "christoffer-moe-ditlevsen"
+            },
+            {
+              "creativeType": "main_artist",
+              "name": "Jakob Ahlbom",
+              "slug": "jakob-ahlbom"
+            }
+          ],
+          "featuredArtists": [],
+          "producers": [
+            {
+              "creativeType": "producer",
+              "name": "Jakob Ahlbom",
+              "slug": "jakob-ahlbom"
+            },
+            {
+              "creativeType": "producer",
+              "name": "Christoffer Moe Ditlevsen",
+              "slug": "christoffer-moe-ditlevsen"
+            }
+          ]
+        },
+        "length": 220,
+        "durationMs": 220625,
+        "bpm": 75,
+        "isSfx": false,
+        "hasVocals": false,
+        "hidden": false,
+        "publicSlug": "X2Da1w9Edp",
+        "genres": [
+          {
+            "displayTag": "Orchestral Hybrid",
+            "tag": "orchestral hybrid",
+            "slug": "orchestral-hybrid",
+            "fatherTag": "Classical"
+          }
+        ],
+        "moods": [
+          {
+            "tag": "Mysterious",
+            "fatherTag": "Moods",
+            "displayTag": "Mysterious",
+            "slug": "mysterious"
+          },
+          {
+            "tag": "Suspense",
+            "fatherTag": "Moods",
+            "displayTag": "Suspense",
+            "slug": "suspense"
+          }
+        ],
+        "energyLevel": "medium",
+        "stems": {
+          "full": {
+            "stemType": "full",
+            "s3TrackId": 606890,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KRB344CFGVK0ZA9CQSF2JF8P.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KN6HG9PRFBN0RWXERG9410JS.json"
+          },
+          "bass": {
+            "stemType": "bass",
+            "s3TrackId": 606888,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KRB344C7CRQPAGXN66WEBDAV.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KN6HG9PAW0YR42QD0ECMTYZT.json"
+          },
+          "instruments": {
+            "stemType": "instruments",
+            "s3TrackId": 606889,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KRB344BVJFXHN3660EDB567A.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KN6HGPNQGTA2RZNWSD4KPKTD.json"
+          },
+          "melody": {
+            "stemType": "melody",
+            "s3TrackId": 606887,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KRB344CRTZ1CS1KJV8M2KKJE.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KN6HGPN6HVC1F3HE18GF3NP8.json"
+          }
+        },
+        "oldTitle": null,
+        "seriesId": null,
+        "metadataTags": [],
+        "isExplicit": false,
+        "isCommercialRelease": true,
+        "imageUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15988/3000x3000.jpg",
+        "coverArt": {
+          "baseUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15988/",
+          "sizes": {
+            "XS": "3000x3000.jpg?height=128&width=128",
+            "S": "3000x3000.jpg?height=300&width=300",
+            "M": "3000x3000.jpg?height=600&width=600",
+            "L": "3000x3000.jpg?height=1050&width=1050"
+          }
+        },
+        "releaseDate": "2026-06-16T03:00:05",
+        "segmentGroups": [
+          {
+            "type": "music-structure",
+            "version": "v2",
+            "segments": [
+              {
+                "startTime": 0,
+                "duration": 57.58,
+                "value": "Intro"
+              },
+              {
+                "startTime": 57.58,
+                "duration": 9.60000000000001,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 67.18,
+                "duration": 22.42,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 89.6,
+                "duration": 3.2,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 92.8,
+                "duration": 9.60000000000001,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 102.4,
+                "duration": 3.19999999999999,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 105.6,
+                "duration": 3.2,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 108.8,
+                "duration": 6.40000000000001,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 115.2,
+                "duration": 12.8,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 128,
+                "duration": 12.8,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 140.8,
+                "duration": 12.8,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 153.6,
+                "duration": 12.78,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 166.38,
+                "duration": 12.82,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 179.2,
+                "duration": 41.425,
+                "value": "Outro"
+              }
+            ]
+          },
+          {
+            "type": "predicted-popular-15sec",
+            "version": "v0a",
+            "segments": [
+              {
+                "startTime": 133,
+                "duration": 15,
+                "value": "14.936066925525665"
+              }
+            ]
+          }
+        ],
+        "cover": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15988/3000x3000.jpg?height=300&width=300"
+      },
+      "284565": {
+        "id": 284565,
+        "kosmosId": "bc3380bc-10d1-4915-b274-c951e7fe80bf",
+        "isrc": "SE5Q52601039",
+        "title": "Cells",
+        "added": "2026-05-08T13:20:20",
+        "creatives": {
+          "composers": [
+            {
+              "creativeType": "composer",
+              "name": "Christoffer Moe Ditlevsen",
+              "slug": "christoffer-moe-ditlevsen"
+            },
+            {
+              "creativeType": "composer",
+              "name": "Jakob Ahlbom",
+              "slug": "jakob-ahlbom"
+            }
+          ],
+          "mainArtists": [
+            {
+              "creativeType": "main_artist",
+              "name": "Jakob Ahlbom",
+              "slug": "jakob-ahlbom"
+            },
+            {
+              "creativeType": "main_artist",
+              "name": "Christoffer Moe Ditlevsen",
+              "slug": "christoffer-moe-ditlevsen"
+            }
+          ],
+          "featuredArtists": [],
+          "producers": [
+            {
+              "creativeType": "producer",
+              "name": "Christoffer Moe Ditlevsen",
+              "slug": "christoffer-moe-ditlevsen"
+            },
+            {
+              "creativeType": "producer",
+              "name": "Jakob Ahlbom",
+              "slug": "jakob-ahlbom"
+            }
+          ]
+        },
+        "length": 253,
+        "durationMs": 253000,
+        "bpm": 136,
+        "isSfx": false,
+        "hasVocals": false,
+        "hidden": false,
+        "publicSlug": "vFFkUKi6xz",
+        "genres": [
+          {
+            "displayTag": "Contemporary Classical",
+            "tag": "contemporary classical",
+            "slug": "contemporary-classical",
+            "fatherTag": "Classical"
+          }
+        ],
+        "moods": [
+          {
+            "tag": "Dreamy",
+            "fatherTag": "Moods",
+            "displayTag": "Dreamy",
+            "slug": "dreamy"
+          },
+          {
+            "tag": "Sentimental",
+            "fatherTag": "Moods",
+            "displayTag": "Sentimental",
+            "slug": "sentimental"
+          }
+        ],
+        "energyLevel": "variable",
+        "stems": {
+          "full": {
+            "stemType": "full",
+            "s3TrackId": 606881,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KR3N2YSKKSSZABPAQ6AXVH87.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KMQAF40Z6PDQZ04JQ1F7CPY6.json"
+          },
+          "bass": {
+            "stemType": "bass",
+            "s3TrackId": 606878,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KR3N2YS88JSF9Q69DYF2H587.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KMQAF41C2HJBVD1QFXDTZYGA.json"
+          },
+          "instruments": {
+            "stemType": "instruments",
+            "s3TrackId": 606879,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KR3N2YSE4R2YENCQ62XHJYYJ.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KMQAF40FM5DCCXBNDCGY9ZWH.json"
+          },
+          "melody": {
+            "stemType": "melody",
+            "s3TrackId": 606880,
+            "lqMp3Url": "https://audiocdn.epidemicsound.com/lqmp3/01KR3N2YS2PX93S2MNRYNHNXQ5.mp3",
+            "waveformUrl": "https://audiocdn.epidemicsound.com/waveform/01KMQAF41RJZ6BZT4ZKPD9C5SW.json"
+          }
+        },
+        "oldTitle": null,
+        "seriesId": null,
+        "metadataTags": [],
+        "isExplicit": false,
+        "isCommercialRelease": true,
+        "imageUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15988/3000x3000.jpg",
+        "coverArt": {
+          "baseUrl": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15988/",
+          "sizes": {
+            "XS": "3000x3000.jpg?height=128&width=128",
+            "S": "3000x3000.jpg?height=300&width=300",
+            "M": "3000x3000.jpg?height=600&width=600",
+            "L": "3000x3000.jpg?height=1050&width=1050"
+          }
+        },
+        "releaseDate": "2026-06-16T03:00:07",
+        "segmentGroups": [
+          {
+            "type": "music-structure",
+            "version": "v2",
+            "segments": [
+              {
+                "startTime": 0,
+                "duration": 40.83,
+                "value": "Intro"
+              },
+              {
+                "startTime": 40.83,
+                "duration": 16.32,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 57.15,
+                "duration": 22.86,
+                "value": "Chorus"
+              },
+              {
+                "startTime": 80.01,
+                "duration": 35.1,
+                "value": "Instrumental"
+              },
+              {
+                "startTime": 115.11,
+                "duration": 137.89,
+                "value": "Instrumental"
+              }
+            ]
+          },
+          {
+            "type": "predicted-popular-15sec",
+            "version": "v0a",
+            "segments": [
+              {
+                "startTime": 52,
+                "duration": 15,
+                "value": "14.972822964191437"
+              }
+            ]
+          }
+        ],
+        "cover": "https://cdn.epidemicsound.com/curation-assets/commercial-release-cover-images/15988/3000x3000.jpg?height=300&width=300"
+      }
+    }
+  }
+}
