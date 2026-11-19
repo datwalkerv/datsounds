@@ -31,6 +31,7 @@ export async function GET(request: NextRequest) {
         "Content-Type": "audio/mpeg",
         "Content-Disposition": `attachment; filename*=UTF-8''${encodeURIComponent(filename)}`,
         "Cache-Control": "private, max-age=3600",
+        "Access-Control-Allow-Origin": "*",
       },
     });
   } catch {

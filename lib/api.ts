@@ -1,4 +1,5 @@
 import { Track, ApiResponse, EnergyLevel } from "@/types/track";
+import { UPSTREAM_HEADERS } from "@/lib/epidemic";
 
 function getBaseUrl() {
   if (typeof window !== "undefined") return "";
@@ -23,10 +24,7 @@ async function fetchTracks(url: string): Promise<Track[]> {
   if (typeof window === "undefined") {
     // Server-side: fetch directly to avoid loopback requests
     res = await fetch(decodedUrl, {
-      headers: {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept": "application/json",
-      },
+      headers: UPSTREAM_HEADERS,
       next: { revalidate: 300 },
     });
   } else {

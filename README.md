@@ -16,6 +16,7 @@ Find the best sounds for your edits, quick and easy.
 - **🎧 Curated Genre Hubs**: Dedicated, quick-access sections for popular genres, including **Lofi** and **Trap**.
 - **💾 Advanced Download System**: Multi-format stem downloads with dropdown selectors and asynchronous downloading support.
 - **💚 Liked & Saved Tracks**: Locally-persisted user preferences for quick access to your favorite sounds.
+- **🔌 Public API**: Free, keyless JSON API for music and SFX search, popular, latest and stems. Full docs for humans and AI agents: [datsounds.vercel.app/api.md](https://datsounds.vercel.app/api.md).
 - **🛡️ Secure API Proxy Routing**: Secure internal Next.js proxying for all external third-party music API communications.
 - **🌟 Premium UI/UX**: Harmonious color palettes, responsive components, and subtle micro-animations.
 

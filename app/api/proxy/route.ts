@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { UPSTREAM_HEADERS } from "@/lib/epidemic";
 
 export async function GET(request: NextRequest) {
   const url = request.nextUrl.searchParams.get("url");
@@ -14,10 +15,7 @@ export async function GET(request: NextRequest) {
 
   try {
     const upstream = await fetch(url, {
-      headers: {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept": "application/json",
-      },
+      headers: UPSTREAM_HEADERS,
     });
 
     if (!upstream.ok) {
