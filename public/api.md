@@ -6,24 +6,36 @@
 
 The API lets you search tracks and sound effects (SFX), list popular and latest tracks, get a track's stems (full mix, bass, drums, instruments, melody) and download MP3.
 
-- No API key, no sign-up, no auth headers.
+- **API key required.** Send it on every `/api/v1/*` request in the `x-api-key` header. Ask the datsounds owner for a key; never put it in public code or URLs.
+- `download` links (`/api/download`) do not need the key, so you can hand them to a browser or `<audio>` tag.
 - Every endpoint is `GET` and returns JSON, except `/api/download`, which returns an MP3.
 - CORS is open (`Access-Control-Allow-Origin: *`), so browsers can call it directly.
 - Responses are cached for 5 minutes (`s-maxage=300`). The same query within that window returns the same data.
 
 ---
 
+## Authentication
+
+```
+x-api-key: <your key>
+```
+
+Missing or wrong key → `401 { "error": "Missing or invalid API key. Send it in the x-api-key header." }`.
+Agents: read the key from an environment variable (e.g. `DATSOUNDS_API_KEY`) instead of hard-coding it.
+
 ## Quick start
 
 ```bash
+KEY="$DATSOUNDS_API_KEY"
+
 # 1. Search
-curl "https://datsounds.vercel.app/api/v1/tracks?q=lofi"
+curl -H "x-api-key: $KEY" "https://datsounds.vercel.app/api/v1/tracks?q=lofi"
 
 # 1b. Search sound effects
-curl "https://datsounds.vercel.app/api/v1/sfx?q=impact"
+curl -H "x-api-key: $KEY" "https://datsounds.vercel.app/api/v1/sfx?q=impact"
 
 # 2. Get every stem of one result (use its kosmosId)
-curl "https://datsounds.vercel.app/api/v1/tracks/<kosmosId>"
+curl -H "x-api-key: $KEY" "https://datsounds.vercel.app/api/v1/tracks/<kosmosId>"
 
 # 3. Download an MP3 (use a `download` URL from step 1 or 2 as-is)
 curl -L -o track.mp3 "<download URL>"
@@ -81,8 +93,8 @@ Same params, limits, response and errors as endpoint 1, but searches only sound 
 | `page` | `1`     | 1–100, 60 per page. |
 
 ```bash
-curl "https://datsounds.vercel.app/api/v1/sfx?q=impact"          # most relevant impacts
-curl "https://datsounds.vercel.app/api/v1/sfx"                   # newest SFX in the library
+curl -H "x-api-key: $KEY" "https://datsounds.vercel.app/api/v1/sfx?q=impact"          # most relevant impacts
+curl -H "x-api-key: $KEY" "https://datsounds.vercel.app/api/v1/sfx"                   # newest SFX in the library
 ```
 
 The response has the same shape as endpoint 1 (the list key is still `tracks`). SFX items are `PublicTrack`s with:
@@ -183,8 +195,10 @@ Errors are JSON: `{ "error": "message" }`.
 | Status | When |
 |--------|------|
 | 400 | Bad `sort`, `page` out of 1–100, `q` over 100 chars, or malformed `kosmosId`. |
+| 401 | Missing or wrong `x-api-key` on an `/api/v1/*` request. |
 | 403 | `/api/download` with a URL not on `audiocdn.epidemicsound.com`. |
 | 404 | `kosmosId` not found. |
+| 503 | The server has no API key configured (owner's setup issue). |
 | 502 | Upstream failed or the page is past the upstream limit. Retry once after a few seconds; on page > 1 treat it as end of results. |
 
 ## Recipes for agents
@@ -211,17 +225,19 @@ Errors are JSON: `{ "error": "message" }`.
 **JavaScript**
 ```js
 const BASE = "https://datsounds.vercel.app";
-const { tracks } = await fetch(`${BASE}/api/v1/tracks?q=${encodeURIComponent("chill lofi")}`).then(r => r.json());
+const headers = { "x-api-key": process.env.DATSOUNDS_API_KEY };
+const { tracks } = await fetch(`${BASE}/api/v1/tracks?q=${encodeURIComponent("chill lofi")}`, { headers }).then(r => r.json());
 const pick = tracks.find(t => !t.hasVocals && t.durationSec >= 60);
-const full = await fetch(`${BASE}/api/v1/tracks/${pick.kosmosId}`).then(r => r.json());
+const full = await fetch(`${BASE}/api/v1/tracks/${pick.kosmosId}`, { headers }).then(r => r.json());
 console.log(full.stems.drums?.download);
 ```
 
 **Python**
 ```python
-import requests
+import os, requests
 BASE = "https://datsounds.vercel.app"
-tracks = requests.get(f"{BASE}/api/v1/tracks", params={"q": "epic trailer"}).json()["tracks"]
+H = {"x-api-key": os.environ["DATSOUNDS_API_KEY"]}
+tracks = requests.get(f"{BASE}/api/v1/tracks", params={"q": "epic trailer"}, headers=H).json()["tracks"]
 t = max(tracks, key=lambda t: t["bpm"])
 open(f"{t['title']}.mp3", "wb").write(requests.get(t["download"]).content)
 ```
